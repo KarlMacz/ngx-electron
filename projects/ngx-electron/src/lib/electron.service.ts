@@ -56,7 +56,7 @@ export class ElectronService {
         return this.electron ? this.electron.ipcRenderer : null;
     }
 
-    public get remote(): Electron.Remote {
+    public get remote(): any {
         return this.electron ? this.electron.remote : null;
     }
 
